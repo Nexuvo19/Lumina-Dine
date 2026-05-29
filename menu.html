@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu — LUMIÈRE</title>
+<meta name="description" content="Explore the LUMIÈRE seasonal menu: starters, mains, desserts, drinks, and chef's specials. Filter, search, and order online." />
+<meta property="og:title" content="LUMIÈRE — Seasonal Menu" />
+<meta property="og:description" content="Chef-crafted seasonal cuisine. Browse, filter and order online." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="loader"><div class="loader-logo">LUMIÈRE</div></div>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle">☀</button>
+      <a href="reservations.html" class="btn btn-primary">Reserve</a>
+      <button class="hamburger">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <span class="eyebrow">Seasonal · Chef-Crafted</span>
+    <h1>The <span class="gradient-text">Menu</span></h1>
+    <p>Eleven plates. Three desserts. One unforgettable evening. Updated monthly with what's freshest from local farms and oceans.</p>
+  </div>
+</header>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="search-bar reveal">
+      <input id="menu-search" type="text" placeholder="Search dishes…" />
+    </div>
+    <div class="menu-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="starter">Starters</button>
+      <button class="filter-btn" data-filter="main">Mains</button>
+      <button class="filter-btn" data-filter="dessert">Desserts</button>
+      <button class="filter-btn" data-filter="drink">Drinks</button>
+      <button class="filter-btn" data-filter="special">Chef's Specials</button>
+    </div>
+
+    <div class="dish-grid">
+      <!-- starters -->
+      <article class="dish reveal" data-cat="starter">
+        <div class="dish-img"><span class="dish-tag">Starter</span><img loading="lazy" src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Burrata Constellation</h3><span class="dish-price">$18</span></div>
+          <p class="dish-desc">Cream burrata, heirloom tomatoes, basil oil, sourdough crackle.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="starter">
+        <div class="dish-img"><span class="dish-tag">Starter</span><img loading="lazy" src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Tuna Crudo</h3><span class="dish-price">$22</span></div>
+          <p class="dish-desc">Sashimi-grade tuna, ponzu, avocado mousse, sesame tuile.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span class="on">🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="starter">
+        <div class="dish-img"><span class="dish-tag">Starter</span><img loading="lazy" src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Truffle Arancini</h3><span class="dish-price">$16</span></div>
+          <p class="dish-desc">Crispy risotto spheres, black truffle, parmesan fondue.</p>
+          <div class="dish-meta"><div class="rating">★★★★☆</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+
+      <!-- mains -->
+      <article class="dish reveal" data-cat="main">
+        <div class="dish-img"><span class="dish-tag">Main</span><img loading="lazy" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Wagyu Ribeye</h3><span class="dish-price">$78</span></div>
+          <p class="dish-desc">A5 Japanese wagyu, bone marrow jus, charred shallot, smoked sea salt.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span class="on">🌶</span><span class="on">🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="main">
+        <div class="dish-img"><span class="dish-tag">Main</span><img loading="lazy" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Atlantic Salmon</h3><span class="dish-price">$42</span></div>
+          <p class="dish-desc">Pan-seared salmon, miso glaze, baby bok choy, citrus crème.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span class="on">🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="main">
+        <div class="dish-img"><span class="dish-tag">Main</span><img loading="lazy" src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Black Truffle Tagliolini</h3><span class="dish-price">$36</span></div>
+          <p class="dish-desc">Hand-cut pasta, 24-month parmigiano, winter truffle.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="main">
+        <div class="dish-img"><span class="dish-tag">Vegan</span><img loading="lazy" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Garden Composition</h3><span class="dish-price">$28</span></div>
+          <p class="dish-desc">35 seasonal vegetables, herb oils, smoked salt, edible flowers.</p>
+          <div class="dish-meta"><div class="rating">★★★★☆</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+
+      <!-- desserts -->
+      <article class="dish reveal" data-cat="dessert">
+        <div class="dish-img"><span class="dish-tag">Dessert</span><img loading="lazy" src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>24K Aurora</h3><span class="dish-price">$24</span></div>
+          <p class="dish-desc">Liquid chocolate sphere, edible gold, raspberry constellation.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="dessert">
+        <div class="dish-img"><span class="dish-tag">Dessert</span><img loading="lazy" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Crème Brûlée Noir</h3><span class="dish-price">$14</span></div>
+          <p class="dish-desc">Tahitian vanilla, charcoal sugar crust, candied violets.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+
+      <!-- drinks -->
+      <article class="dish reveal" data-cat="drink">
+        <div class="dish-img"><span class="dish-tag">Cocktail</span><img loading="lazy" src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Neon Spritz</h3><span class="dish-price">$16</span></div>
+          <p class="dish-desc">Yuzu, elderflower, smoked rosemary, prosecco mist.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="drink">
+        <div class="dish-img"><span class="dish-tag">Mocktail</span><img loading="lazy" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Aurora Cooler</h3><span class="dish-price">$12</span></div>
+          <p class="dish-desc">Hibiscus, lychee, ginger pearls, sparkling water.</p>
+          <div class="dish-meta"><div class="rating">★★★★☆</div><div class="spice"><span>🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+
+      <!-- specials -->
+      <article class="dish reveal" data-cat="special">
+        <div class="dish-img"><span class="dish-tag">Chef Special</span><img loading="lazy" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Wagyu Tataki</h3><span class="dish-price">$48</span></div>
+          <p class="dish-desc">A5 wagyu, charred yuzu, smoked soy pearls, micro shiso.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span class="on">🌶</span><span class="on">🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+      <article class="dish reveal" data-cat="special">
+        <div class="dish-img"><span class="dish-tag">7-Course</span><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="" /></div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Aurora Tasting Menu</h3><span class="dish-price">$185</span></div>
+          <p class="dish-desc">Seven courses curated by Chef Antoine. Wine pairing available.</p>
+          <div class="dish-meta"><div class="rating">★★★★★</div><div class="spice"><span class="on">🌶</span><span>🌶</span><span>🌶</span></div><button class="add-btn">+</button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-dot"></span>LUMIÈRE</a>
+        <p style="margin-top:1rem; max-width:320px;">A cinematic fine-dining experience where seasonal cuisine, neon light, and warm hospitality meet.</p>
+      </div>
+      <div><h4>Visit</h4><ul><li>12 Aurora Lane</li><li>Downtown, NY 10013</li><li>Tue–Sun, 6–11 PM</li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="reservations.html">Reservations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Follow</h4><div class="socials"><a href="#">◉</a><a href="#">✦</a><a href="#">f</a><a href="#">♪</a></div></div>
+    </div>
+    <div class="footer-bot">© 2026 LUMIÈRE. Crafted with intention.</div>
+  </div>
+</footer>
+
+<a class="float-reserve" href="reservations.html"><span>Reserve</span> ✦</a>
+<div class="chatbot">
+  <button class="chatbot-btn">💬</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-head"><strong>Concierge</strong><button style="background:none;border:0;color:#fff;font-size:1.3rem;cursor:pointer;">×</button></div>
+    <div class="chatbot-body"><div class="msg bot">Looking for a dish recommendation? Ask away.</div></div>
+    <div class="chatbot-input"><input type="text" placeholder="Type a message…" /><button>↑</button></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

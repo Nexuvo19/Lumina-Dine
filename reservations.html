@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reservations — LUMIÈRE</title>
+<meta name="description" content="Reserve your table at LUMIÈRE. Instant confirmation, table selection, and WhatsApp booking." />
+<meta property="og:title" content="Reserve at LUMIÈRE" />
+<meta property="og:description" content="Book your cinematic dining experience." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="loader"><div class="loader-logo">LUMIÈRE</div></div>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="reservations.html">Reservations</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle">☀</button>
+      <a href="reservations.html" class="btn btn-primary">Reserve</a>
+      <button class="hamburger">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <span class="eyebrow">Reserve Your Seat</span>
+    <h1>Book a <span class="gradient-text">table</span></h1>
+    <p>Limited seats nightly. Reservations open 30 days in advance — instant confirmation.</p>
+  </div>
+</header>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <form id="reservation-form" class="form-card reveal">
+      <div class="form-grid">
+        <div class="field"><label>Full Name</label><input type="text" required placeholder="Your name" /></div>
+        <div class="field"><label>Phone</label><input type="tel" required placeholder="+1 555 0000" /></div>
+        <div class="field full"><label>Email</label><input type="email" required placeholder="you@example.com" /></div>
+        <div class="field"><label>Date</label><input type="date" required /></div>
+        <div class="field"><label>Time</label>
+          <select required>
+            <option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option>
+            <option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option>
+            <option>9:00 PM</option><option>9:30 PM</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Guests</label>
+          <div class="counter">
+            <button type="button" class="minus">−</button>
+            <span>2</span>
+            <button type="button" class="plus">+</button>
+          </div>
+        </div>
+        <div class="field full">
+          <label>Select Table</label>
+          <div class="tables">
+            <div class="table-opt sel"><div class="ico">🪑</div><div class="lbl">Window Booth</div></div>
+            <div class="table-opt"><div class="ico">✦</div><div class="lbl">Chef's Counter</div></div>
+            <div class="table-opt"><div class="ico">🌿</div><div class="lbl">Garden Seat</div></div>
+            <div class="table-opt"><div class="ico">🍷</div><div class="lbl">Wine Lounge</div></div>
+            <div class="table-opt"><div class="ico">★</div><div class="lbl">Private Room</div></div>
+          </div>
+        </div>
+        <div class="field full"><label>Special Requests</label><textarea placeholder="Allergies, occasion, seating preferences…"></textarea></div>
+      </div>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+        <button type="submit" class="btn btn-primary" style="flex:1; min-width:200px;">Confirm Reservation →</button>
+        <a href="https://wa.me/15550000000" target="_blank" class="btn btn-ghost">📱 WhatsApp Booking</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Need to Know</span>
+      <h2>Reservation <span class="gradient-text">policy</span></h2>
+    </div>
+    <div class="dish-grid">
+      <div class="info-card reveal"><div class="ico">⏱</div><div><h4>Cancellation</h4><p>Free up to 24h before. Late cancellations charged 50%.</p></div></div>
+      <div class="info-card reveal"><div class="ico">👔</div><div><h4>Dress Code</h4><p>Smart casual. We love when guests dress for the occasion.</p></div></div>
+      <div class="info-card reveal"><div class="ico">🎂</div><div><h4>Celebrations</h4><p>Tell us — birthdays, anniversaries, proposals. We'll make it magical.</p></div></div>
+      <div class="info-card reveal"><div class="ico">🅿</div><div><h4>Parking</h4><p>Free valet after 7 PM. Garage on 5th Street, 2 min walk.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="index.html" class="logo"><span class="logo-dot"></span>LUMIÈRE</a><p style="margin-top:1rem; max-width:320px;">A cinematic fine-dining experience.</p></div>
+      <div><h4>Visit</h4><ul><li>12 Aurora Lane</li><li>Downtown, NY 10013</li><li>Tue–Sun, 6–11 PM</li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Follow</h4><div class="socials"><a href="#">◉</a><a href="#">✦</a><a href="#">f</a><a href="#">♪</a></div></div>
+    </div>
+    <div class="footer-bot">© 2026 LUMIÈRE.</div>
+  </div>
+</footer>
+
+<div class="chatbot">
+  <button class="chatbot-btn">💬</button>
+  <div class="chatbot-panel">
+    <div class="chatbot-head"><strong>Concierge</strong><button style="background:none;border:0;color:#fff;font-size:1.3rem;cursor:pointer;">×</button></div>
+    <div class="chatbot-body"><div class="msg bot">Need help booking? I can guide you through every step.</div></div>
+    <div class="chatbot-input"><input type="text" placeholder="Type a message…" /><button>↑</button></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
